@@ -17,7 +17,7 @@ public class Pratica52 {
             System.out.println(eq.getRaiz1());
             System.out.println(eq.getRaiz2());
         } 
-        catch (RuntimeException e) {
+        catch (Exception e) {
             System.out.println(e.getLocalizedMessage());
         }
         try {
@@ -25,7 +25,7 @@ public class Pratica52 {
             System.out.println(eq.getRaiz1());
             System.out.println(eq.getRaiz2());
         } 
-        catch (RuntimeException e) {
+        catch (Exception e) {
             System.out.println(e.getLocalizedMessage());
         }
         try {
@@ -33,7 +33,7 @@ public class Pratica52 {
             System.out.println(eq.getRaiz1());
             System.out.println(eq.getRaiz2());
         } 
-        catch (RuntimeException e) {
+        catch (Exception e) {
             System.out.println(e.getLocalizedMessage());
         }
         try {
@@ -41,7 +41,16 @@ public class Pratica52 {
             System.out.println(eq.getRaiz1());
             System.out.println(eq.getRaiz2());
         } 
-        catch (RuntimeException e) {
+        catch (Exception e) {
+            System.out.println(e.getLocalizedMessage());
+        }
+        try {
+            eq = new Equacao2Grau(1,2,1);
+            System.out.println(eq.getRaiz1());
+            System.out.println(eq.getRaiz2());
+            eq.setA(0);
+        } 
+        catch (Exception e) {
             System.out.println(e.getLocalizedMessage());
         }
     }
