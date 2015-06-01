@@ -10,11 +10,11 @@ package utfpr.ct.dainf.if62c.pratica;
  * @author User
  * @param <T>
  */
-public class Equacao2Grau <T extends Number & Comparable  >  {
+public class Equacao2Grau <T extends  Number & Comparable  >  {
     T a;
     T b;
     T c;
-    public Equacao2Grau(T a,T b, T c) {
+    public Equacao2Grau(T a,T b, T c) throws Exception{
         if(a.compareTo(0)==0){
             throw new RuntimeException("Coeficiente a não pode ser zero");
         }
@@ -27,7 +27,7 @@ public class Equacao2Grau <T extends Number & Comparable  >  {
         return a;
     }
 
-    public void setA(T a) {
+    public void setA(T a)throws Exception {
         if(a.compareTo(0)==0){
             throw new RuntimeException("Coeficiente a não pode ser zero");
         }
@@ -49,14 +49,14 @@ public class Equacao2Grau <T extends Number & Comparable  >  {
     public void setC(T c) {
         this.c = c;
     }
-    public double getRaiz1(){
+    public double getRaiz1() throws Exception {
         double delta=b.doubleValue()*b.doubleValue()-(4*a.doubleValue()*c.doubleValue());
         if(delta<0){
             throw new RuntimeException("Equação não tem solução real");
         }
         return (-b.doubleValue()+Math.sqrt(delta))/(2*a.doubleValue());
     }
-    public double getRaiz2(){
+    public double getRaiz2()throws Exception{
         double delta=b.doubleValue()*b.doubleValue()-(4*a.doubleValue()*c.doubleValue());
         if(delta<0){
             throw new RuntimeException("Equação não tem solução real");

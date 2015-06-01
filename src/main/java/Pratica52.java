@@ -12,10 +12,10 @@ import utfpr.ct.dainf.if62c.pratica.Equacao2Grau;
 public class Pratica52 {
     public static void main(String[] args) {
         Equacao2Grau eq;
-        double a;
         try {
             eq = new Equacao2Grau(1,2,9);
-            a=eq.getRaiz1();
+            System.out.println(eq.getRaiz1());
+            System.out.println(eq.getRaiz2());
         } 
         catch (RuntimeException e) {
             System.out.println(e.getLocalizedMessage());
