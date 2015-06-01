@@ -10,7 +10,7 @@ import utfpr.ct.dainf.if62c.pratica.Equacao2Grau;
  * @author Wilson Horstmeyer Bogado <wilson@utfpr.edu.br>
  */
 public class Pratica52 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Equacao2Grau eq;
         try {
             eq = new Equacao2Grau(1,2,9);
